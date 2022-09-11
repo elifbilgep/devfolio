@@ -12,6 +12,7 @@ class ServiceMobile extends StatelessWidget {
         const CustomSectionHeading(
           text: '\nWhat I am working on',
         ),
+        Space.y2!,
         CarouselSlider.builder(
           itemCount: ServicesUtils.servicesTitles.length,
           itemBuilder: (BuildContext context, int itemIndex, int i) => Padding(

@@ -38,7 +38,7 @@ class AboutMobile extends StatelessWidget {
           SizedBox(
             height: height * 0.03,
           ),
-          Align(
+          /*  Align(
             alignment: Alignment.centerLeft,
             child: Text(
               "Who am I?",
@@ -46,30 +46,29 @@ class AboutMobile extends StatelessWidget {
                 color: AppTheme.c!.primary,
               ),
             ),
-          ),
+          ), */
           Space.y1!,
           Text(
             AboutUtils.aboutMeHeadline,
-            style: AppText.b2b!.copyWith(
-              fontFamily: 'Montserrat',
-            ),
+            style: AppText.b2!.copyWith(),
+            textAlign: TextAlign.center,
           ),
           SizedBox(
             height: height * 0.02,
           ),
           Text(
+            textAlign: TextAlign.center,
             AboutUtils.aboutMeDetail,
             style: AppText.l1!.copyWith(
               height: 2,
-              letterSpacing: 1.1,
               fontFamily: 'Montserrat',
             ),
           ),
           Space.y!,
-          Divider(
-            color: Colors.grey[800],
+          /* Divider(
+            color: Colors.grey[500],
             thickness: AppDimensions.normalize(0.5),
-          ),
+          ), */
           Space.y!,
           Text(
             'Technologies I have worked with:',
@@ -87,10 +86,10 @@ class AboutMobile extends StatelessWidget {
                 .toList(),
           ),
           Space.y!,
-          Divider(
-            color: Colors.grey[800],
+          /*  Divider(
+            color: Colors.grey[500],
             thickness: AppDimensions.normalize(0.5),
-          ),
+          ), */
           SizedBox(
             height: height * 0.02,
           ),
@@ -103,7 +102,9 @@ class AboutMobile extends StatelessWidget {
             information: "elf.prlk64@gmail.com",
           ),
           Space.y!,
-          OutlinedButton(
+          ElevatedButton(
+              style: ElevatedButton.styleFrom(
+                  backgroundColor: AppTheme.light.primary),
               child: const Text("Resume"),
               onPressed: () {
                 kIsWeb
@@ -111,7 +112,7 @@ class AboutMobile extends StatelessWidget {
                     : openURL(StaticUtils.resume);
               }),
           Space.y!,
-          Wrap(
+          /* Wrap(
               alignment: WrapAlignment.center,
               crossAxisAlignment: WrapCrossAlignment.center,
               children: WorkUtils.logos
@@ -124,7 +125,7 @@ class AboutMobile extends StatelessWidget {
                       height: WorkUtils.communityLogoHeight[e.key],
                     ),
                   )
-                  .toList()),
+                  .toList()), */
         ],
       ),
     );

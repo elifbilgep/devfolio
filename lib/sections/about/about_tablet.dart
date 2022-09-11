@@ -42,12 +42,12 @@ class AboutTab extends StatelessWidget {
           SizedBox(
             height: height * 0.03,
           ),
-          Text(
+          /*  Text(
             "Who am I?",
             style: AppText.b2!.copyWith(
               color: AppTheme.c!.primary,
             ),
-          ),
+          ), */
           Space.y1!,
           Text(
             AboutUtils.aboutMeHeadline,
@@ -130,11 +130,12 @@ class AboutTab extends StatelessWidget {
               SizedBox(
                 height: AppDimensions.normalize(13),
                 width: AppDimensions.normalize(40),
-                child: OutlinedButton(
+                child: ElevatedButton(
                   onPressed: () => html.window.open(StaticUtils.resume, 'pdf'),
                   child: const Text(
                     "Resume",
                   ),
+                  style: ElevatedButton.styleFrom(primary: Colors.grey),
                 ),
               ),
               Space.x!,

@@ -13,7 +13,8 @@ class CustomSectionHeading extends StatelessWidget {
   Widget build(BuildContext context) {
     return Text(
       text,
-      style: AppText.h1!.copyWith(
+      textAlign: TextAlign.center,
+      style: AppText.h3!.copyWith(
         fontFamily: 'Montserrat',
       ),
     );

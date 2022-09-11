@@ -3,5 +3,5 @@ class AboutUtils {
       "I'm Elif Bilge, a Flutter Developer, Technical Writer and Ex-GDSC Lead";
 
   static const String aboutMeDetail =
-      "I'm a Third Year Computer Engineering student enrolled in Mugla Sıtkı Kocman University, Turkey. I have been developing mobile apps for over 2 years now. I have worked in Düşyeri for a while. I'm a former Google Developer Student Clubs Lead and also developed my first app Self Care Reminder.";
+      "I'm a Third Year Computer Engineering student enrolled in Mugla Sıtkı Kocman University, Turkey. Have been developing mobile apps for over 2 years now. Worked in Düşyeri (Super App for Kids 💜) for a while. Former Google Developer Student Clubs Lead and also developed my first app Self Care Reminder.";
 }

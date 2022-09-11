@@ -13,12 +13,12 @@ class ToolTechWidget extends StatelessWidget {
       children: [
         Icon(
           Icons.circle,
-          color: AppTheme.c!.primary,
+          color: AppTheme.dark.primary,
           size: AppDimensions.normalize(2),
         ),
         Text(
           " $techName ",
-          style: AppText.l1b,
+          style: AppText.l1,
         )
       ],
     );

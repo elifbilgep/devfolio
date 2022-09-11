@@ -24,8 +24,9 @@ class AboutDesktop extends StatelessWidget {
       padding: Space.h,
       child: Column(
         children: [
+          Space.y1!,
           const CustomSectionHeading(
-            text: '\nAbout Me',
+            text: 'About Me',
           ),
           Space.y1!,
           Row(
@@ -118,7 +119,7 @@ class AboutDesktop extends StatelessWidget {
                         ],
                       ),
                       Space.y1!,
-                      Row(
+                      /* Row(
                         children: [
                           Space.x1!,
                           ...WorkUtils.logos.asMap().entries.map(
@@ -132,7 +133,7 @@ class AboutDesktop extends StatelessWidget {
                                 ),
                               )
                         ],
-                      ),
+                      ), */
                     ],
                   ),
                 ),
