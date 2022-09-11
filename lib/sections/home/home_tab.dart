@@ -102,7 +102,7 @@ class HomeTab extends StatelessWidget {
                             textStyle: AppText.b1,
                           ),
                           TyperAnimatedText(
-                            ' Technical Writer :)',
+                            ' Technical Writer',
                             speed: const Duration(milliseconds: 50),
                             textStyle: AppText.b1,
                           ),

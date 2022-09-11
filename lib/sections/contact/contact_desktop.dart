@@ -17,10 +17,10 @@ class ContactDesktop extends StatelessWidget {
           const CustomSectionHeading(
             text: "\nGet in Touch",
           ),
-          const CustomSectionSubHeading(
+          /*  const CustomSectionSubHeading(
             text: "Let's build something together :)\n\n",
-          ),
-          Space.y!,
+          ), */
+          Space.y2!,
           Wrap(
               alignment: WrapAlignment.center,
               runSpacing: AppDimensions.normalize(10),

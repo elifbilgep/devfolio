@@ -34,7 +34,7 @@ class AboutDesktop extends StatelessWidget {
               Expanded(
                 child: Image.asset(
                   StaticUtils.coloredPhoto,
-                  height: height * 0.4,
+                  height: height * 0.5,
                 ),
               ),
               Expanded(
@@ -47,7 +47,7 @@ class AboutDesktop extends StatelessWidget {
                       Space.y1!,
                       Text(
                         AboutUtils.aboutMeHeadline,
-                        style: AppText.b1b!.copyWith(
+                        style: AppText.b1!.copyWith(
                           fontFamily: 'Montserrat',
                         ),
                       ),
@@ -56,7 +56,6 @@ class AboutDesktop extends StatelessWidget {
                         AboutUtils.aboutMeDetail,
                         style: AppText.b2!.copyWith(
                           height: 2,
-                          letterSpacing: 1.1,
                           fontFamily: 'Montserrat',
                           fontSize: AppDimensions.normalize(5),
                         ),
@@ -118,7 +117,7 @@ class AboutDesktop extends StatelessWidget {
                           ),
                         ],
                       ),
-                      Space.y1!,
+                      Space.y2!,
                       /* Row(
                         children: [
                           Space.x1!,
