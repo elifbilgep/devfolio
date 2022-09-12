@@ -30,14 +30,13 @@ class AboutMobile extends StatelessWidget {
           /*    const CustomSectionSubHeading(
             text: 'Get to know me :)',
           ), */
-          Space.y1!,
+          Space.y2!,
           Image.asset(
             StaticUtils.mobilePhoto,
-            height: height * 0.27,
+            height: height * 0.25,
           ),
-          SizedBox(
-            height: height * 0.03,
-          ),
+          Space.y2!,
+
           /*  Align(
             alignment: Alignment.centerLeft,
             child: Text(
@@ -47,7 +46,7 @@ class AboutMobile extends StatelessWidget {
               ),
             ),
           ), */
-          Space.y1!,
+
           Text(
             AboutUtils.aboutMeHeadline,
             style: AppText.b2!.copyWith(),
@@ -90,17 +89,17 @@ class AboutMobile extends StatelessWidget {
             color: Colors.grey[500],
             thickness: AppDimensions.normalize(0.5),
           ), */
-          SizedBox(
+          /* SizedBox(
             height: height * 0.02,
-          ),
-          const AboutMeData(
+          ), */
+          /* const AboutMeData(
             data: "Name",
             information: "Elif Bilge",
           ),
           const AboutMeData(
             data: "Email",
             information: "elf.prlk64@gmail.com",
-          ),
+          ), */
           Space.y!,
           ElevatedButton(
               style: ElevatedButton.styleFrom(

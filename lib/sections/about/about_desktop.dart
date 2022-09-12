@@ -28,14 +28,24 @@ class AboutDesktop extends StatelessWidget {
           const CustomSectionHeading(
             text: 'About Me',
           ),
-          Space.y1!,
           Row(
             children: [
               Expanded(
-                child: Image.asset(
-                  StaticUtils.coloredPhoto,
-                  height: height * 0.5,
+                // ignore: prefer_const_constructors
+                child: Container(
+                  height: AppDimensions.normalize(80),
+                  decoration: const BoxDecoration(
+                      shape: BoxShape.circle,
+                      image: DecorationImage(
+                          fit: BoxFit.cover,
+                          image: AssetImage(
+                            StaticUtils.coloredPhoto,
+                          ))),
                 ),
+                /*  Image.asset(
+                    StaticUtils.coloredPhoto,
+                    height: height * 0.35,
+                  ), */
               ),
               Expanded(
                 flex: width < 1230 ? 2 : 1,
@@ -82,11 +92,11 @@ class AboutDesktop extends StatelessWidget {
                             .toList(),
                       ),
                       Space.y!,
-                      Divider(
+                      /*  Divider(
                         color: Colors.grey[800],
                         thickness: AppDimensions.normalize(0.1),
-                      ),
-                      Row(
+                      ), */
+                      /* Row(
                         children: [
                           Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
@@ -116,8 +126,8 @@ class AboutDesktop extends StatelessWidget {
                             ],
                           ),
                         ],
-                      ),
-                      Space.y2!,
+                      ), */
+                      Space.y1!,
                       /* Row(
                         children: [
                           Space.x1!,

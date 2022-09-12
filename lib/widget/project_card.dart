@@ -61,7 +61,6 @@ class ProjectCardState extends State<ProjectCard> {
         child: Container(
           clipBehavior: Clip.none,
           margin: Space.h,
-          // padding: Space.all(),
           width: AppDimensions.normalize(150),
           height: AppDimensions.normalize(90),
           decoration: BoxDecoration(
